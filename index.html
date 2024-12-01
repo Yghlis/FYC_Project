@@ -7,24 +7,15 @@
 </head>
 <body>
   <div class="container">
-    <div id="viewer"></div>
+    <div id="viewer" style="width: 70%; height: 100vh;"></div>
     <div class="customization-panel">
       <h3>Personnalisation</h3>
       
       <div class="option">
         <h4>Choisir un modèle</h4>
         <button id="tshirt-btn">T-Shirt</button>
-        <button id="polo-btn">Polo</button>
-        <button id="pull-btn">Pull</button>
       </div>
       
-      <div class="option">
-        <h4>Choisir une texture</h4>
-        <button id="normal-btn">Normal</button>
-        <button id="cotton-btn">Coton</button>
-        <button id="leather-btn">Cuir</button>
-      </div>
-
       <div class="option">
         <h4>Choisir une couleur</h4>
         <input type="color" id="color-picker" value="#ff0000">
@@ -34,6 +25,8 @@
         <h4>Ajouter une image</h4>
         <input type="file" id="image-upload" accept="image/*">
         <p>Importez une image puis cliquez sur le modèle pour l'appliquer.</p>
+        <h4>Prévisualisation de l'image</h4>
+        <img id="image-preview" alt="Prévisualisation" style="max-width: 100%; display: none;">
         <button id="remove-images-btn">Enlever les images</button>
       </div>
     </div>

@@ -147,3 +147,10 @@ button:focus-visible {
     color: #213547;
   }
 }
+#image-preview {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+}
