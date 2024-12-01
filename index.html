@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Formes 3D</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="viewer"></div>
+    <div class="customization-panel">
+      <h3>Personnalisation</h3>
+      
+      <div class="option">
+        <h4>Choisir un modèle</h4>
+        <button id="tshirt-btn">T-Shirt</button>
+        <button id="polo-btn">Polo</button>
+        <button id="pull-btn">Pull</button>
+      </div>
+      
+      <div class="option">
+        <h4>Choisir une texture</h4>
+        <button id="normal-btn">Normal</button>
+        <button id="cotton-btn">Coton</button>
+        <button id="leather-btn">Cuir</button>
+      </div>
+
+      <div class="option">
+        <h4>Choisir une couleur</h4>
+        <input type="color" id="color-picker" value="#ff0000">
+      </div>
+
+      <div class="option">
+        <h4>Ajouter une image</h4>
+        <input type="file" id="image-upload" accept="image/*">
+        <p>Importez une image puis cliquez sur le modèle pour l'appliquer.</p>
+        <button id="remove-images-btn">Enlever les images</button>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>
